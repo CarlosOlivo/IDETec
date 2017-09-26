@@ -6,6 +6,8 @@
 package idetec;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,13 +22,15 @@ public class IDETec extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("ideGUI.fxml"));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setResources(ResourceBundle.getBundle("bundle.Idioma"));
+        Parent root = loader.load(this.getClass().getResource("iniciarSesionGUI.fxml").openStream());
         
         Scene scene = new Scene(root);
         
         primaryStage.setScene(scene);
-        primaryStage.setMaximized(true);
-        primaryStage.setTitle("IDETec");
+        primaryStage.setResizable(false);
+        primaryStage.setTitle(ResourceBundle.getBundle("bundle/Idioma").getString("tIniciarSesion"));
         primaryStage.show();
     }
 
