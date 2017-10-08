@@ -29,7 +29,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Nombre del proyecto:" GridPane.valignment="BOTTOM" />
+            <Label text="%lNombreProyecto" GridPane.valignment="BOTTOM" />
             <TextField GridPane.rowIndex="1" />
          </children>
       </GridPane>
@@ -43,7 +43,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Ruta de creación:" GridPane.valignment="BOTTOM" />
+            <Label text="%lRutaCreacion" GridPane.valignment="BOTTOM" />
             <TextField prefHeight="25.0" prefWidth="300.0" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <graphic>
@@ -75,12 +75,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Lenguaje:" GridPane.valignment="BOTTOM" />
+                  <Label text="%lLenguaje" GridPane.valignment="BOTTOM" />
                   <ComboBox prefWidth="150.0" GridPane.rowIndex="1" />
                </children>
             </GridPane>
-            <CheckBox mnemonicParsing="false" text="Crear clase main" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" text="Crear" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <CheckBox mnemonicParsing="false" text="%chMain" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" text="%bCrear" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
          </children>
       </GridPane>
    </children>

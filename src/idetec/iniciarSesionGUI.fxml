@@ -8,10 +8,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="idetec.IniciarSesionGUIController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
@@ -27,7 +28,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" text="Registrar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="bRegistrar" mnemonicParsing="false" onAction="#handleButtonAction" text="%bRegistrar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <GridPane>
@@ -39,8 +40,14 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="%lUser" GridPane.halignment="CENTER" />
-            <Label text="%lPass" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label text="%lUser" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <Label text="%lPass" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
          </children>
       </GridPane>
       <GridPane GridPane.columnIndex="1">
@@ -56,10 +63,10 @@
             <PasswordField GridPane.rowIndex="1" />
          </children>
          <GridPane.margin>
-            <Insets right="20.0" />
+            <Insets />
          </GridPane.margin>
       </GridPane>
-      <Button mnemonicParsing="false" text="Iniciar Sesión" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Button fx:id="bIniciar" mnemonicParsing="false" onAction="#handleButtonAction" text="%bIniciar" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
    </children>
    <padding>
       <Insets bottom="10.0" />
