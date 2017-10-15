@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="426.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="idetec.AbrirProyectoGUIController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="130.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
@@ -22,8 +22,8 @@
    <children>
       <TableView prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
         <columns>
-          <TableColumn prefWidth="167.0" text="%tcProyectos" />
-          <TableColumn prefWidth="88.0" text="%tcPermisos" />
+          <TableColumn prefWidth="158.0" resizable="false" text="%tcProyectos" />
+          <TableColumn prefWidth="97.0" resizable="false" text="%tcPermisos" />
         </columns>
          <opaqueInsets>
             <Insets />
@@ -42,7 +42,7 @@
             <Insets right="20.0" top="20.0" />
          </GridPane.margin>
          <image>
-            <Image url="@../../../../../Pictures/mis%20imagenes/AndroidWallpaper-Moonwolf.jpg" />
+            <Image url="file:/C:/Users/edson/Pictures/mis%20imagenes/lobo.jpg" />
          </image>
       </ImageView>
       <GridPane>
@@ -55,11 +55,11 @@
         </rowConstraints>
          <children>
             <Label text="%lCrearProyecto" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" GridPane.halignment="CENTER">
+            <Button fx:id="bCrearProyecto" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" GridPane.halignment="CENTER">
                <graphic>
                   <ImageView fitHeight="60.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Pictures/mis%20imagenes/iconos%20IDETec/mas.png" />
+                        <Image url="file:/C:/Users/edson/Pictures/mis%20imagenes/iconos%20IDETec/mas.png" />
                      </image>
                   </ImageView>
                </graphic>

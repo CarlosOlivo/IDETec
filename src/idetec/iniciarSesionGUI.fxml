@@ -28,7 +28,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="bRegistrar" mnemonicParsing="false" onAction="#handleButtonAction" text="%bRegistrar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="bRegistrar" mnemonicParsing="false" text="%bRegistrar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <GridPane>
@@ -66,7 +66,7 @@
             <Insets />
          </GridPane.margin>
       </GridPane>
-      <Button fx:id="bIniciar" mnemonicParsing="false" onAction="#handleButtonAction" text="%bIniciar" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Button fx:id="bIniciar" mnemonicParsing="false" text="%bIniciar" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
    </children>
    <padding>
       <Insets bottom="10.0" />

@@ -25,11 +25,26 @@
       <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label text="%lNombre" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-      <Label text="%lUsuario" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-      <Label text="%lPassword" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-      <Label text="%lPasswordConfirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Label text="%lMail" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Label text="%lNombre" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin></Label>
+      <Label text="%lUsuario" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin></Label>
+      <Label text="%lPassword" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin></Label>
+      <Label text="%lPasswordConfirm" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin></Label>
+      <Label text="%lMail" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin></Label>
       <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <TextField GridPane.columnIndex="2" GridPane.rowIndex="2" />
       <PasswordField GridPane.columnIndex="2" GridPane.rowIndex="3" />
@@ -50,9 +65,8 @@
          <children>
             <ImageView fitHeight="77.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../../../../../Pictures/mis%20imagenes/AndroidWallpaper-Moonwolf.jpg" />
-               </image>
-            </ImageView>
+                  <Image url="file:/C:/Users/edson/Pictures/mis%20imagenes/lobo.jpg" />
+               </image></ImageView>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" text="..." GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
          </children>
       </GridPane>
