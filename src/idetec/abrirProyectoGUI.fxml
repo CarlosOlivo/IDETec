@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="idetec.AbrirProyectoGUIController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="424.0" style="-fx-background-color: #9CF0CE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="idetec.AbrirProyectoGUIController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="130.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
@@ -55,7 +55,7 @@
         </rowConstraints>
          <children>
             <Label text="%lCrearProyecto" GridPane.columnIndex="1" />
-            <Button fx:id="bCrearProyecto" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" GridPane.halignment="CENTER">
+            <Button fx:id="bCrearProyecto" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: 255, 255, 255 , 0;" GridPane.halignment="CENTER">
                <graphic>
                   <ImageView fitHeight="60.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                      <image>

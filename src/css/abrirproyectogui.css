@@ -3,5 +3,8 @@
  */
 
 .mainFxmlClass {
-
+    
+}
+#bCrearProyecto{
+    -fx-background-color: red;
 }

@@ -1,5 +1,6 @@
 package idetec;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -11,11 +12,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 public class IniciarSesionGUIController implements Initializable{
     
-    @FXML public Button bIniciar;
-    @FXML public Button bRegistrar;
+    @FXML private Button bIniciar;
+    @FXML private Button bRegistrar;
+    @FXML private TextField tfUsuario;
+    @FXML private PasswordField pfPassword;
+    
+    private String user;
+    private String pass;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -35,7 +42,7 @@ public class IniciarSesionGUIController implements Initializable{
                     ventana.setResizable(false);
                     ventana.setTitle(ResourceBundle.getBundle("bundle/Idioma").getString("tAbrirProyecto"));
                     ventana.show();
-                }catch(Exception e){
+                }catch(IOException e){
                     System.err.println(e);
                 }
             }
@@ -54,12 +61,15 @@ public class IniciarSesionGUIController implements Initializable{
 
                     ventana.setScene(scene);
                     ventana.setResizable(false);
-                    ventana.setTitle(ResourceBundle.getBundle("bundle/Idioma").getString("tRegistrarse"));
+                    ventana.setTitle(ResourceBundle.getBundle("bundle.Idioma").getString("tRegistrarse"));
                     ventana.show();
-                }catch(Exception e){
+                }catch(IOException e){
                     System.err.println(e);
                 }
             }
         });
+    }
+    public void inicio(){
+        
     }
 }

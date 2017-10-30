@@ -9,7 +9,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <GridPane prefHeight="65.0" prefWidth="746.0" BorderPane.alignment="CENTER">
@@ -106,7 +105,7 @@
                         </MenuButton>
                         <ImageView fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                            <image>
-                              <Image url="@../../../../../Pictures/mis%20imagenes/AndroidWallpaper-Moonwolf.jpg" />
+                              <Image url="@../../../../../Pictures/mis%20imagenes/lobo.jpg" />
                            </image>
                         </ImageView>
                      </children>
